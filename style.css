@@ -6,9 +6,9 @@
 
 body {
     margin: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
     padding-top: 10px;
+    box-sizing: border-box;
 }
 
 ul {
@@ -65,7 +65,7 @@ nav li{
 }
 
 .block__btn > a {
-    padding: 15px 40px;
+    padding: 20px 40px;
     text-decoration: none;
     border-radius: 10px;
     transition: 0.5s;
@@ -91,18 +91,24 @@ nav li{
     background: rgb(131, 0, 0);
 }
 
+main {
+    width: 100%;
+    padding-left: 157px;
+    box-sizing: border-box;
+}
+
 .col1 {
     width: 100%;
     height: 100vh;
     display: flex;
+    margin-bottom: 59px;
 }
 
 .col1__text {
     width: 60%;
     position: relative;
     z-index: 1;
-    /* flex-grow: 1; */
-    padding: 162px 0 0 109px;
+    padding: 162px 0 0 0;
     box-sizing: border-box;
 }
 
@@ -150,19 +156,25 @@ nav li{
 
 .col1__count > p {
     margin: 0;
+    color: rgba(0, 0, 0, 0.582);
+}
+
+.col1__count h3::after {
+    content: '+';
+    color: var(--red-color);
 }
 
 .col1__img {
     position: absolute;
     right: 30%;
-    top: 21%;
+    top: 31%;
     z-index: 2;
 }
 
 .col1__btn {
     display: flex;
     gap: 27px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black-color);
     padding-bottom: 60px;
 }
 
@@ -172,7 +184,184 @@ nav li{
     position: relative;
     background: url('images/main/backround.png') no-repeat;
     background-size: cover;
-    
     z-index: 1;
 }
 
+.col2 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 61px; */
+    gap: 48px;
+    box-sizing: border-box;
+    margin-bottom: 320px;
+}
+
+.col2__header {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.col2__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2__content img {
+    width: 239px;
+}
+
+.col3 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 56px;
+    margin-bottom: 200px;
+}
+
+.col3__header {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.col3-header__span{
+    color: var(--red-color);
+    font-size: 20px;
+}
+
+.col3__header h2{
+    font-size: 50px;
+    margin: 0;
+    margin-bottom: 22px;
+}
+
+.col3__header h2 > span{
+    font-weight: 800;
+    color: black;
+}
+
+.col3__header p {
+    font-size: 15px;
+}
+
+.col3__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 140px;
+    row-gap: 80px;
+}
+
+.col3__block {
+    text-align: center;
+
+}
+
+.col3__block p:nth-child(2) {
+    font-size: 30px;
+}
+
+.col3__block p:nth-child(3) {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.548);
+}
+
+.col3__btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+
+.col4 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+    padding-bottom: 50px;
+    margin-bottom: 80px;
+}
+
+.col4__left {
+    width: 35%;
+    line-height: 50px;
+}
+
+.col4__right {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 157px;
+    box-sizing: border-box;
+}
+
+footer li > a {
+    color: rgba(0, 0, 0, 0.473);
+}
+
+
+footer li {
+    display: block;
+    margin-bottom: 17px;
+}
+.footer__col1 {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.footer-menu__content {
+    display: flex;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+
+.footer__footer-utility li{
+    display: block;
+}
+
+.footer-utility__items {
+    margin-top: 40px;
+}
+
+.footer__cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__cards-content {
+    display: flex;
+    gap: 70px;
+    margin-top: 30px;
+    flex-grow: 1;
+}
+
+.footer__cards-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__col2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer__col2 p:nth-child(even) {
+    color: var(--red-color);
+}
